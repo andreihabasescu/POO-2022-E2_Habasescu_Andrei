@@ -6,8 +6,8 @@ int main()
 {
     Number n{ "20",10 };
     Number m("2", 10);
-    string x = n + m;
-    cout << "X : " << x << endl;
+    Number x = n + m;
+    cout << "X Value : " << x.GetValue() << endl;
     cout <<"N>M? :" << (n>m) << endl;
     n.Print();
 

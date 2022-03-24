@@ -62,6 +62,8 @@ Number::Number(const Number& x) {
 Number& Number::operator=(const Number&& x) {
 	this->base = x.base;
 	this->value = x.value;
+
+	return *this;
 }; 
 
 Number::Number(Number&& x)
